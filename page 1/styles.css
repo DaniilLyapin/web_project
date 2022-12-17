@@ -3,33 +3,19 @@
     padding: 0;
 }
 .wrapper{
-    
-}
-.container-header{
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    background-color: black;
-    width: 1200px;
-    right: 50%;
-    transform: translate(50%);
-    z-index: 1;
+    height: 2000px;
+
 }
 .container{
     width: 1200px;
-    height: 2000px;
-    background-color: rgb(87, 80, 72);
-    position: absolute;
-    top: 100px;
-    right: 50%;
-    transform: translate(50%);
+    height: 100%;
+    margin: 0 auto;
+    background-color: bisque;
 }
-
-.logo{
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
-    position: absolute;
-    right: 50%;
-    transform: translate(50%);
+header{
+    position: fixed;
+    width: 1200px;
+    height: 70px;
+    background-color: black;
+    margin: 0 auto;
 }
