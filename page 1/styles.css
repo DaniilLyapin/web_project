@@ -2,20 +2,357 @@
     margin: 0;
     padding: 0;
 }
-.wrapper{
-    height: 2000px;
-
+body{
+    font-size: 16px;
+    color: #484d4e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background-color: #1FADE5;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    float:left;
+    margin-right:30px;
+}
+.sign-in{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: #1FADE5
 }
 .container{
     width: 1200px;
     height: 100%;
-    margin: 0 auto;
-    background-color: bisque;
+    
 }
-header{
-    position: fixed;
-    width: 1200px;
+.content{
+    position: relative;
+    width: 100%;
+    height: 3200px;
+    display: flex;
+    justify-content: center;
+    top: 70px;
+}
+.logo-div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 70px;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.title-div{
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+}
+.title_1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'FuturaPT',Arial,sans-serif;
+    font-size: 20px;
+}
+.title_2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+.buttons{
+    width: 100%;
     height: 70px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.join-button{
+    width: 200px;
+    height: 80%;
+    border: 2px solid;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    border-radius: 30px;
+}
+.anon-button{
+    width: 250px;
+    height: 80%;
+    border: 2px solid;
+    border-color: #fff;
+    background-color: rgb(0, 0, 0);
+    margin-left: 30px;
+    border-radius: 30px;
+    color: #fff;
+}
+button{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-weight: 1000;
+}
+.marquee-content{
+    margin-top: 100px;
+    width: 100%;
+    height: 70px;
+    background-color: #1FADE5;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.marquee{
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: sans-serif;
+    padding: 24px 0;
+    color: #fff;
+    white-space: nowrap;
+    animation: marquee 30s infinite linear;
+}
+.marquee::after{
+    content: "WE ARE DEVELOPING AVIATION IN KAZAKHSTAN - WE ARE DEVELOPING AVIATION IN KAZAKHSTAN - WE ARE DEVELOPING AVIATION IN KAZAKHSTAN";
+}
+@keyframes marquee{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}
+.news-title{
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+}
+.news-title h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'FuturaPT',Arial,sans-serif;
+    font-size: 40px;
+}
+.news-title p{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.news{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-card{
+    width: 760px;
+    height: 250px;
+    margin: 20px;
+    border-bottom: 1px solid;
+    border-color: #818a8d;
+    display: flex;
+    align-items: center;
+}
+.news-card button{
+    width: 100%;
+    height: 100%;
+}
+.news-pic{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.news-pic img{
+    width: 100%;
+    height: 100%;
+}
+.news-inf{
+    margin-left: 30px;
+    height: 150px;
+    width: 500px;
+}
+.inf-title{
+    width: 100%;
+    height: 25px;
+    font-family: 'FuturaPT',Arial,sans-serif;
+    font-size: 22px;
+}
+.inf{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inf p{
+    margin:10px 0;
+}
+.title{
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-text{
+    width: 760px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.join-button-content{
+    width: 100%;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.join_button{
+    width: 250px;
+    height: 70px;
+    border: 3px solid;
+    border-color: black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+}
+.line{
+    width: 255px;
+    height: 60px;
+    border-bottom: 1px solid;
+    border-color: #818a8d;
+}
+a{
+    text-decoration: none;
+}
+.anonim-rep{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rep_title{
+    height: 100px;
+    width: 500px;
+    font-family: 'FuturaPT',Arial,sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.rep_text{
+    height: 150px;
+    width: 500px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+.rep-form-content{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rep-form{
+    width: 760px;
+    height: 100%;
+}
+.form{
+    margin: 20px 0;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+}
+.form-title{
+    width: 100%;
+    height: 35px;
+    background-color: #fff;
+}
+input{
+    height: 65px;
+    width: 720px;
+    border: 1px solid;
+    outline:none;
+    padding: 0 20px;
+}
+.button-form{
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 210px;
+    height: 60px;
+    background-color: #fff;
     background-color: black;
-    margin: 0 auto;
+    color: white;
 }
