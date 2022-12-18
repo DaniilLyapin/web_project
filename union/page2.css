@@ -310,8 +310,8 @@ button{
     margin: 0 auto;
 }
 #screen{
-    width: 460px;
-    height: 836px;
+    width: 380px;
+    height: 650px;
     float: right;
     border-radius: 10px;
     visibility: hidden;
@@ -333,13 +333,14 @@ button{
     height: 60px;
     cursor: pointer;
     border-radius: 36px;
-    background-color: #1FADE5;
+    border: 1px solid black;
     color :blueviolet;
     font-size: 20px;
     font-weight: 600;
 }
 #join_but a{
     text-decoration: none;
+    color:#000000;
 }
 #see_but{
     margin-left: 10px;
@@ -348,8 +349,8 @@ button{
     height: 60px;
     cursor: pointer;
     border-radius: 36px;
-    background-color: #1FADE5;
-    color :blueviolet;
+    background-color: black;
+    color :white;
     font-size: 20px;
     font-weight: 600;
 }
