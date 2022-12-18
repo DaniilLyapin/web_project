@@ -103,6 +103,7 @@ li{
     width: 100%;
     height: 70px;
     margin-top: 70px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +140,9 @@ button{
     font-weight: 1000;
 }
 .marquee-content{
-    margin-top: 100px;
+    position: absolute;
+    right: 0%;
+    
     width: 100%;
     height: 70px;
     background-color: #1FADE5;
@@ -170,7 +173,7 @@ button{
 .news-title{
     width: 100%;
     height: 150px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 .news-title h1{
     display: flex;
@@ -357,9 +360,9 @@ input{
     color: white;
 }
 footer{
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
-    height:300px;
+    height:200px;
     border-top: 1px solid;
     background-color: #292929;
     overflow: hidden;
@@ -371,6 +374,7 @@ footer{
     width: 1200px;
     height: 100%;
     display: flex;
+    align-items: center;
 }
 .text{
     margin-top: 20px;
