@@ -86,6 +86,12 @@ button{
     width: 300px;
     height: 200px;
 }
+#signbut{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .info_union{
     position: absolute;
     z-index: 1;
